@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yud Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <!--Шапка-->
+ <header class="header">
+    <div class="container">
+      <a href="./index.html" class="logo header__logo" lang="en" rel="noreferrer noopener">Yud<span
+          class="logo__span logo__span--black-color">Technology</span>
+      </a>
+      <button type="button" aria-expanded="false" aria-controls="mobile-menu" class="menu-open js-open-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-menu-mob"></use>
+        </svg>
+      </button>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-close js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-close-mob"></use>
+          </svg>
+        </button>
+        <nav class="mobile-navigation">
+          <ul class="mobile-navigation__list">
+            <li class="mobile-navigation__items mobile-current"><a href="./index.html"
+                class="mobile-navigation__link ">Studio</a></li>
+            <li class="mobile-navigation__items"><a href="./portfolio.html"
+                class="mobile-navigation__link">Portfolio</a></li>
+            <li class="mobile-navigation__items"><a href="#contacts" class="mobile-navigation__link">Contacts</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul class="mobile-connection">
+            <li class="mobile-connection__item"><a href="tel:+447360543422" class="mobile-connection__tel">
+                +447360543422</a></li>
+            <li class="mobile-connection__item"><a href="mailto:info@devstudio.com" class="mobile-connection__mail">
+                udkobiznes@gmail.com</a></li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__items"><a href="./index.html" class="navigation__link ">Studio</a></li>
+          <li class="navigation__items"><a href="./portfolio.html" class="navigation__link current">Portfolio</a></li>
+          <li class="navigation__items"><a href="#contacts" class="navigation__link">Contacts</a></li>
+        </ul>
+      </nav>
+      <ul class="connection">
+        <li class="connection__mail"><a href="mailto:info@devstudio.com" class="connection__link">
+            <svg width="16" height="16" class="connection__icon">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            udkobiznes@gmail.com</a></li>
+        <li class="connection__tel"><a href="tel:+380961111111" class="connection__link">
+            <svg width="16" height="16" class="connection__icon">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +447360543422</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <main>
+  <!--Основний контент-->
+
+  <main>
+
+    <!--Проєкти-->
+
+    <section class="projects">
+      <div class="container">
+        <h1 class="visually-hidden">Проєкти</h1>
+        <ul class="projects__list">
+          <li class="projects__items"><button type="button" class="projects__btn">All of them</button></li>
+          <li class="projects__items"><button type="button" class="projects__btn">Websites</button></li>
+          <li class="projects__items"><button type="button" class="projects__btn">Appendices</button></li>
+          <li class="projects__items"><button type="button" class="projects__btn">Design</button></li>
+          <li class="projects__items"><button type="button" class="projects__btn">Marketing</button></li>
+        </ul>
+        <ul class="projects__gallery">
+          <li class="projects__items-gallery">
+            <a href="" class="projects__link">
+              <div class="projects__foto">
+                <picture>
+                  <source srcset="./images/group1.jpg 1x,
+                  ./images/group1-2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/group1-tab.jpg 1x,
+                  ./images/group1-tab-2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/group1-mob.jpg 1x,
+                  ./images/group1-mob-2x.jpg 2x" media="(min-width:480px)">
+                  <img srcset="./images/group1.jpg 1x,
+                  ./images/group1-2x.jpg 2x" src="./images/group1.jpg" alt="зображення людей на екрані ноутбука">
+                </picture>
+                <p class="projects__text">Consultations on Information Technology: Our company specializes in providing expert advice and guidance on information technology solutions. 
+                </p>
+              </div>
+              <div class="projects__description">
+                <h2 class="projects__title">TechnoCrack</h2>
+                <p class="projects__direction">Website</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__items-gallery">
+            <a href="" class="projects__link">
+              <div class="projects__foto">
+                <picture>
+                  <source srcset="./images/group2.jpg 1x,
+                  ./images/group2-2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/group2-tab.jpg 1x,
+                  ./images/group2-tab-2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/group2-mob.jpg 1x,
+                  ./images/group2-mob-2x.jpg 2x" media="(min-width:480px)">
+                  <img srcset="./images/group2.jpg 1x,
+                  ./images/group2-2x.jpg 2x" src="./images/group2.jpg"
+                    alt="зображення постера на якому нарисовані баскетболісти">
+                </picture>
+                <p class="projects__text">Consultations on Information Technology: Our company specializes in providing expert advice and guidance on information technology solutions. 
+                </p>
+              </div>
+              <div class="projects__description">
+                <h2 class="projects__title">Poster New Orleans vs Golden State</h2>
+                <p class="projects__direction">Design</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__items-gallery">
+            <a href="" class="projects__link">
+              <div class="projects__foto">
+                <picture>
+                  <source srcset="./images/group3.jpg 1x,
+                  ./images/group3-2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/group3-tab.jpg 1x,
+                  ./images/group3-tab-2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/group3-mob.jpg 1x,
+                  ./images/group3-mob-2x.jpg 2x" media="(min-width:480px)">
+                  <img srcset="./images/group3.jpg 1x,
+                  ./images/group3-2x.jpg 2x" src="./images/group2.jpg" alt="зображення емблеми рибного ресторану">
+                </picture>
+                <p class="projects__text">Consultations on Information Technology: Our company specializes in providing expert advice and guidance on information technology solutions. 
+                </p>
+              </div>
+              <div class="projects__description">
+                <h2 class="projects__title">Seafood Restaurant</h2>
+                <p class="projects__direction">App</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__items-gallery">
+            <a href="" class="projects__link">
+              <div class="projects__foto">
+                <picture>
+                  <source srcset="./images/group4.jpg 1x,
+                  ./images/group4-2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/group4-tab.jpg 1x,
+                  ./images/group4-tab-2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/group4-mob.jpg 1x,
+                  ./images/group4-mob-2x.jpg 2x" media="(min-width:480px)">
+                  <img srcset="./images/group4.jpg 1x,
+                  ./images/group4-2x.jpg 2x" src="./images/group4.jpg" alt="зображення навушників">
+                </picture>
+                <p class="projects__text">Consultations on Information Technology: Our company specializes in providing expert advice and guidance on information technology solutions. 
+                </p>
+              </div>
+              <div class="projects__description">
+                <h2 class="projects__title">Project Prime</h2>
+                <p class="projects__direction">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__items-gallery">
+            <a href="" class="projects__link">
+              <div class="projects__foto">
+                <picture>
+                  <source srcset="./images/group5.jpg 1x,
+                  ./images/group5-2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/group5-tab.jpg 1x,
+                  ./images/group5-tab-2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/group5-mob.jpg 1x,
+                  ./images/group5-mob-2x.jpg 2x" media="(min-width:480px)">
+                  <img srcset="./images/group5.jpg 1x,
+                  ./images/group5-2x.jpg 2x" src="./images/group5.jpg" alt="зображення коробок">
+                </picture>
+                <p class="projects__text">Consultations on Information Technology: Our company specializes in providing expert advice and guidance on information technology solutions. 
+                </p>
+              </div>
+              <div class="projects__description">
+                <h2 class="projects__title"> Boxes</h2>
+                <p class="projects__direction">App</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__items-gallery">
+            <a href="" class="projects__link">
+              <div class="projects__foto">
+                <picture>
+                  <source srcset="./images/group6.jpg 1x,
+                  ./images/group6-2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/group6-tab.jpg 1x,
+                  ./images/group6-tab-2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/group6-mob.jpg 1x,
+                  ./images/group6-mob-2x.jpg 2x" media="(min-width:480px)">
+                  <img srcset="./images/group6.jpg 1x,
+                  ./images/group6-2x.jpg 2x" src="./images/group6.jpg" alt="зображення Imac">
+                </picture>
+                <p class="projects__text">Consultations on Information Technology: Our company specializes in providing expert advice and guidance on information technology solutions. 
+                </p>
+              </div>
+              <div class="projects__description">
+                <h2 class="projects__title">Inspiration has no Borders</h2>
+                <p class="projects__direction">Website</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__items-gallery">
+            <a href="" class="projects__link">
+              <div class="projects__foto">
+                <picture>
+                  <source srcset="./images/group7.jpg 1x,
+                  ./images/group7-2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/group7-tab.jpg 1x,
+                  ./images/group7-tab-2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/group7-mob.jpg 1x,
+                  ./images/group7-mob-2x.jpg 2x" media="(min-width:480px)">
+                  <img srcset="./images/group7.jpg 1x,
+                  ./images/group7-2x.jpg 2x" src="./images/group7.jpg" alt="зображення розкритої книги">
+                </picture>
+                <p class="projects__text">Consultations on Information Technology: Our company specializes in providing expert advice and guidance on information technology solutions. 
+                </p>
+              </div>
+              <div class="projects__description">
+                <h2 class="projects__title"> Limited Edition</h2>
+                <p class="projects__direction">Design</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__items-gallery">
+            <a href="" class="projects__link">
+              <div class="projects__foto">
+                <picture>
+                  <source srcset="./images/group8.jpg 1x,
+                  ./images/group8-2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/group8-tab.jpg 1x,
+                  ./images/group8-tab-2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/group8-mob.jpg 1x,
+                  ./images/group8-mob-2x.jpg 2x" media="(min-width:480px)">
+                  <img srcset="./images/group8.jpg 1x,
+                  ./images/group8-2x.jpg 2x" src="./images/group8.jpg" alt="зображення бирки">
+                </picture>
+                <p class="projects__text">Consultations on Information Technology: Our company specializes in providing expert advice and guidance on information technology solutions. 
+                </p>
+              </div>
+              <div class="projects__description">
+                <h2 class="projects__title"> LAB</h2>
+                <p class="projects__direction">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects__items-gallery">
+            <a href="" class="projects__link">
+              <div class="projects__foto">
+                <picture>
+                  <source srcset="./images/group9.jpg 1x,
+                  ./images/group9-2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./images/group9-tab.jpg 1x,
+                  ./images/group9-tab-2x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./images/group9-mob.jpg 1x,
+                  ./images/group9-mob-2x.jpg 2x" media="(min-width:480px)">
+                  <img srcset="./images/group9.jpg 1x,
+                  ./images/group9-2x.jpg 2x" src="./images/group9.jpg" alt="зображення ноутбука з рекламою">
+                </picture>
+                <p class="projects__text">Consultations on Information Technology: Our company specializes in providing expert advice and guidance on information technology solutions. 
+                </p>
+              </div>
+              <div class="projects__description">
+                <h2 class="projects__title">Growing Business</h2>
+                <p class="projects__direction">App</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!--Подвал-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-contact">
+        <address id="contacts" class="address">
+          <a href="./index.html" lang="en" rel="noreferrer noopener" class="logo address__logo">Yud<span
+              class="logo__span logo__span--white-color">Technology</span>
+          </a>
+          <ul class="address__list">
+            <li class="address__items">6 Maypole Rd, East Grinstead, United Kingdom, RH19 1GZ</li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="address__mail">udkobiznes@gmail.com</a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="address__tel">+447360543422</a>
+            </li>
+          </ul>
+        </address>
+        <div class="join">
+          <h2 class="join__title">JOIN IN</h2>
+          <ul class="social">
+            <li class="social__items social__items--grey-background"><a href="https://www.linkedin.com/"
+                class="social__link social__link--white-color">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a></li>
+            <li class="social__items social__items--grey-background"><a href="https://www.linkedin.com/"
+                class="social__link social__link--white-color">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a></li>
+            <li class="social__items social__items--grey-background"><a href="https://www.linkedin.com/"
+                class="social__link social__link--white-color">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a></li>
+            <li class="social__items social__items--grey-background"><a href="https://www.linkedin.com/"
+                class="social__link social__link--white-color">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <form class="subscribe__form">
+            <label for="mail" class="subscribe__label">
+SUBSCRIBE TO THE NEWSLETTER</label>
+            <input type="email" name="email" id="mail" placeholder="E-mail" class="subscribe__input">
+            <button type="submit" class="subscribe__btn">Sign up
+              <svg width="24" height="24" class="subscribe__icon">
+                <use href="./images/icons.svg#icon-telegram"></use>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

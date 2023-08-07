@@ -1,0 +1,29 @@
+%list {
+  margin: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+%link {
+  text-decoration: none;
+}
+%title {
+  font-size: 36px;
+  line-height: 1.17;
+}
+%section {
+  padding: 94px 0px;
+}
+%btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $primary-color;
+  font-family: inherit;
+  cursor: pointer;
+}

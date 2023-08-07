@@ -1,0 +1,28 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  @include font(24, 1.17);
+  color: $accent-link-color;
+  @extend %link;
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+  &__span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    @include font(24, 1.17);
+    @include desktop {
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+    }
+    &--black-color {
+      color: #000000;
+    }
+  }
+  &__span--white-color {
+    color: $primary-color;
+  }
+}

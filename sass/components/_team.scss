@@ -1,0 +1,60 @@
+.team {
+  background-color: #f5f4fa;
+  padding: 60px 0px;
+  @include desktop {
+    padding: 94px 0px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    @include font(28, 1.18);
+    text-align: center;
+    @include desktop {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.17;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    @extend %list;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  &__name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    @include font($fs: 16, $lh: 1.19);
+    text-align: center;
+  }
+  &__profession {
+    margin-bottom: 16px;
+
+    @include font($fs: 16, $lh: 1.19);
+    text-align: center;
+    color: $additional-color;
+  }
+  &__social {
+    margin-bottom: 24px;
+    @include desktop {
+      margin-bottom: 30px;
+    }
+  }
+}
+.team__items {
+  width: 100%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $primary-color;
+  @include tablet {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}

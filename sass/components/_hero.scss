@@ -1,0 +1,64 @@
+.hero {
+  max-width: 480px;
+  height: 400px;
+  padding: 118px 0px;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(..//../images/banner-mob.jpg);
+  @include retina {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(..//../images/banner-mob-2x.jpg);
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include tablet {
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(..//../images/banner-tab.jpg);
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(..//../images/banner-tab-2x.jpg);
+    }
+  }
+  @include desktop {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(..//../images/banner.jpg);
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(..//../images/banner-2x.jpg);
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 900;
+    @include font(26, 1.62, 0.06);
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-color;
+    @include desktop {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+}
+.hero__btn {
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 24px;
+  background-color: $accent-link-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #f08080;
+  }
+  @extend %btn;
+}

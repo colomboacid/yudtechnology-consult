@@ -1,0 +1,128 @@
+.projects {
+  padding: 60px 0px;
+  @include desktop {
+    padding: 94px 0px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      max-width: 344px;
+    }
+    @include tablet {
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+    @include desktop {
+      margin-bottom: 50px;
+    }
+    @extend %list;
+  }
+  &__items:not(:last-child) {
+    margin-right: 8px;
+  }
+  &__items:nth-child(-n + 3) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    @extend %list;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  &__link {
+    @extend %link;
+  }
+  &__foto {
+    position: relative;
+    overflow: hidden;
+  }
+  &__text {
+    position: absolute;
+    transform: translateY(100%);
+    opacity: 0;
+    top: 0;
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    @include font(18, 1.56);
+    color: $primary-color;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__description {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: 0px;
+  }
+  &__title {
+    margin-bottom: 4px;
+    @include font(18, 2, 0.06);
+    color: $second-color;
+  }
+  &__direction {
+    @include font(16, 1.88);
+    color: $additional-color;
+  }
+}
+.projects__btn {
+  padding: 6px 22px;
+  border: 0px;
+  border-radius: 4px;
+
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  font-weight: 500;
+  @include font(16, 1.63);
+  text-align: center;
+  color: $second-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-link-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.projects__items-gallery {
+  width: 100%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+  background-color: $primary-color;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  @include tablet {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+.projects__items-gallery:hover .projects__text,
+.projects__items-gallery:focus .projects__text {
+  opacity: 1;
+  transform: translateY(0);
+}
+.projects__items-gallery:first-child .projects__description {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
+}

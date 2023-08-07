@@ -1,0 +1,108 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $primary-color;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include tablet {
+    display: none;
+  }
+}
+.menu-container.is-open {
+  transform: translateY(0);
+}
+.menu-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  @include flex();
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $accent-link-color;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+.mobile-navigation__list {
+  padding-top: 48px;
+  padding-left: 40px;
+  @extend %list;
+}
+.mobile-navigation__items:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-navigation__link {
+  font-weight: 500;
+  @include font(40, 1.18, 0.02);
+  color: $second-color;
+  @extend %link;
+  &:hover,
+  &:focus {
+    color: $accent-link-color;
+  }
+}
+.mobile-connection {
+  padding-left: 40px;
+  padding-bottom: 64px;
+  @extend %list;
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__tel {
+    font-weight: 500;
+    @include font(34, 1.18, 0.02);
+    color: $accent-link-color;
+    @extend %link;
+  }
+  &__mail {
+    font-weight: 500;
+    @include font(24, 1.17, 0.02);
+    color: $additional-color;
+    @extend %link;
+  }
+}
+.mobile-social {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  @extend %list;
+}
+.mobile-social__item {
+  position: relative;
+}
+.mobile-social__item:not(:last-child) {
+  margin-right: 20px;
+}
+.mobile-social__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 100%;
+  top: 50%;
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+.mobile-social__link {
+  font-weight: 500;
+  @include font(18, 1.22, 0.02);
+  color: $accent-link-color;
+  @extend %link;
+}
+.mobile-current {
+  color: $accent-link-color;
+}
